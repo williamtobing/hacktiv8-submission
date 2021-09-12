@@ -1,7 +1,11 @@
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./components/Home/Home";
+
 function App() {
   return (
     <>
-      <h1>hacktiv8-submission</h1>
+      <Navbar />
+      <Home />
     </>
   );
 }

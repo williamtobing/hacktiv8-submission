@@ -1,0 +1,3 @@
+.nav-li {
+  @apply text-xl text-black hover:text-gray-400 dark:text-white dark:hover:text-gray-400 font-bold cursor-pointer ml-6 duration-300;
+}

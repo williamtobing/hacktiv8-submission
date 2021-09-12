@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
+
+body {
+  font-family: "Comfortaa", cursive;
+}
+
+.my-container {
+  @apply max-w-screen-lg px-2 mx-auto;
+}
+
+.centered {
+  @apply flex justify-center items-center;
+}
