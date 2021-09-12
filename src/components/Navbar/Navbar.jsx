@@ -1,20 +1,38 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MoonIcon, SunIcon } from "@heroicons/react/outline";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const [theme, setTheme] = useState("");
+  const [theme, setTheme] = useState("light");
 
-  const toDark = () => {
-    setTheme("dark");
-    document.documentElement.classList.remove("light");
-    document.documentElement.classList.add("dark");
-  };
+  useEffect(() => {
+    const themeStorage = localStorage.getItem("theme");
+
+    if (themeStorage) {
+      setTheme(themeStorage);
+    }
+
+    if (themeStorage === "dark") {
+      document.documentElement.classList.remove("light");
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.add("light");
+    }
+  }, []);
 
   const toLight = () => {
     setTheme("light");
     document.documentElement.classList.remove("dark");
     document.documentElement.classList.add("light");
+    localStorage.setItem("theme", "light");
+  };
+
+  const toDark = () => {
+    setTheme("dark");
+    document.documentElement.classList.remove("light");
+    document.documentElement.classList.add("dark");
+    localStorage.setItem("theme", "dark");
   };
 
   return (
@@ -36,60 +54,12 @@ const Navbar = () => {
           </span>
         </div>
         <ul className="flex py-4 select-none">
-          <li
-            className="nav-li"
-            data-sal="slide-up"
-            data-sal-duration="400"
-            data-sal-delay="100"
-            data-sal-easing="ease-out"
-          >
-            Home
-          </li>
-          <li
-            className="nav-li"
-            data-sal="slide-up"
-            data-sal-duration="400"
-            data-sal-delay="200"
-            data-sal-easing="ease-out"
-          >
-            About
-          </li>
-          <li
-            className="nav-li"
-            data-sal="slide-up"
-            data-sal-duration="400"
-            data-sal-delay="400"
-            data-sal-easing="ease-out"
-          >
-            Portfolio
-          </li>
-          <li
-            className="nav-li"
-            data-sal="slide-up"
-            data-sal-duration="400"
-            data-sal-delay="400"
-            data-sal-easing="ease-out"
-          >
-            Blog
-          </li>
-          <li
-            className="nav-li"
-            data-sal="slide-up"
-            data-sal-duration="400"
-            data-sal-delay="500"
-            data-sal-easing="ease-out"
-          >
-            Team
-          </li>
-          <li
-            className="nav-li"
-            data-sal="slide-up"
-            data-sal-duration="400"
-            data-sal-delay="600"
-            data-sal-easing="ease-out"
-          >
-            Contact
-          </li>
+          <li className="nav-li">Home</li>
+          <li className="nav-li">About</li>
+          <li className="nav-li">Portfolio</li>
+          <li className="nav-li">Blog</li>
+          <li className="nav-li">Team</li>
+          <li className="nav-li">Contact</li>
         </ul>
       </div>
     </nav>

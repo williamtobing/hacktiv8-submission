@@ -8,12 +8,12 @@ function Home() {
         className="h-16 w-16 mb-4 dark:text-white"
         data-sal="slide-up"
         data-sal-duration="800"
-        data-sal-delay="800"
+        data-sal-delay="400"
         data-sal-easing="ease-out"
       />
       <h1
         className="centered text-4xl font-bold dark:text-white"
-        data-sal="slide-right"
+        data-sal="slide-up"
         data-sal-duration="800"
         data-sal-delay="800"
         data-sal-easing="ease-out"
