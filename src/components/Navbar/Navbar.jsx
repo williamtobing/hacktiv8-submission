@@ -36,12 +36,60 @@ const Navbar = () => {
           </span>
         </div>
         <ul className="flex py-4 select-none">
-          <li className="nav-li">Home</li>
-          <li className="nav-li">About</li>
-          <li className="nav-li">Portfolio</li>
-          <li className="nav-li">Blog</li>
-          <li className="nav-li">Team</li>
-          <li className="nav-li">Contact</li>
+          <li
+            className="nav-li"
+            data-sal="slide-up"
+            data-sal-duration="400"
+            data-sal-delay="100"
+            data-sal-easing="ease-out"
+          >
+            Home
+          </li>
+          <li
+            className="nav-li"
+            data-sal="slide-up"
+            data-sal-duration="400"
+            data-sal-delay="200"
+            data-sal-easing="ease-out"
+          >
+            About
+          </li>
+          <li
+            className="nav-li"
+            data-sal="slide-up"
+            data-sal-duration="400"
+            data-sal-delay="400"
+            data-sal-easing="ease-out"
+          >
+            Portfolio
+          </li>
+          <li
+            className="nav-li"
+            data-sal="slide-up"
+            data-sal-duration="400"
+            data-sal-delay="400"
+            data-sal-easing="ease-out"
+          >
+            Blog
+          </li>
+          <li
+            className="nav-li"
+            data-sal="slide-up"
+            data-sal-duration="400"
+            data-sal-delay="500"
+            data-sal-easing="ease-out"
+          >
+            Team
+          </li>
+          <li
+            className="nav-li"
+            data-sal="slide-up"
+            data-sal-duration="400"
+            data-sal-delay="600"
+            data-sal-easing="ease-out"
+          >
+            Contact
+          </li>
         </ul>
       </div>
     </nav>
