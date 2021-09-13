@@ -1,3 +1,7 @@
-.nav-li {
-  @apply text-xl text-black hover:text-gray-400 dark:text-white dark:hover:text-gray-400 font-bold cursor-pointer ml-6 duration-300;
+.nav-text {
+  @apply text-xl text-black hover:text-gray-400 dark:text-white dark:hover:text-gray-400 font-bold duration-300;
+}
+
+.nav-text-mobile {
+  @apply flex justify-between w-full px-4 py-2 text-sm dark:text-white leading-5 text-left hover:bg-gray-200 dark:hover:bg-gray-800 duration-300;
 }
