@@ -46,8 +46,8 @@ const Navbar = () => {
     <>
       <nav className="hidden md:block bg-white dark:bg-black shadow-md fixed z-40 w-screen">
         <div className="my-container flex justify-between">
-          <div className="flex items-center">
-            <AtSymbolIcon className="h-6 w-6 text-black dark:text-white select-none" />
+          <div className="flex items-center select-none">
+            <AtSymbolIcon className="h-6 w-6 text-black dark:text-white" />
             <Link to="/" className="nav-text">
               simply
               <span className="text-blue-400">F</span>

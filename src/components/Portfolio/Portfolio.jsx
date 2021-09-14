@@ -1,5 +1,5 @@
 import Fade from "react-reveal/Fade";
-import { ClipboardListIcon } from "@heroicons/react/outline";
+import { FolderOpenIcon, DesktopComputerIcon } from "@heroicons/react/outline";
 
 import Project from "./Project";
 
@@ -9,14 +9,14 @@ function Portfolio() {
       <div className="my-container flex flex-col">
         <Fade bottom cascade>
           <div className="mt-20 flex justify-center mb-4 md:hidden">
-            <ClipboardListIcon className="h-12 w-12 mb-2 dark:text-white" />
+            <FolderOpenIcon className="h-12 w-12 mb-2 dark:text-white" />
             <h1 className="flex items-center text-4xl font-bold dark:text-white">
               Portfolio
             </h1>
           </div>
 
           <div className="mt-20 hidden md:block mb-4">
-            <ClipboardListIcon className="h-16 w-16 mb-2 dark:text-white mx-auto" />
+            <FolderOpenIcon className="h-16 w-16 mb-2 dark:text-white mx-auto" />
             <h1 className="text-center text-4xl font-bold dark:text-white">
               Portfolio
             </h1>
@@ -59,15 +59,17 @@ function Portfolio() {
         </Fade>
 
         <Fade bottom cascade>
-          <div className="mt-12 mb-4 flex justify-center md:hidden">
-            <ClipboardListIcon className="h-8 w-12 mb-1 dark:text-white" />
-            <h1 className="flex items-center text-2xl font-bold dark:text-white">
-              Project
-            </h1>
+          <div className="flex justify-center mt-12 mb-4 md:hidden">
+            <div className="flex w-80">
+              <DesktopComputerIcon className="h-8 w-12 mb-1 dark:text-white" />
+              <h1 className="flex items-center text-2xl font-bold dark:text-white">
+                Project
+              </h1>
+            </div>
           </div>
 
           <div className="mt-12 mb-4 hidden md:flex md:justify-center">
-            <ClipboardListIcon className="h-8 w-8 mb-1 dark:text-white" />
+            <DesktopComputerIcon className="h-8 w-8 mb-1 dark:text-white" />
             <h1 className="flex items-center text-2xl font-bold dark:text-white">
               Project
             </h1>
