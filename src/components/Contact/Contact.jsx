@@ -14,9 +14,30 @@ function Contact() {
         </Fade>
         <Fade bottom>
           <ul className="text-center">
-            <li className="contact-text">LinkedIn</li>
-            <li className="contact-text">Twitter</li>
-            <li className="contact-text">GitHub</li>
+            <li className="p-1">
+              <a
+                href="mailto:william.sl.tobing@gmail.com"
+                className="contact-text"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li className="p-1">
+              <a
+                href="mailto:william.sl.tobing@gmail.com"
+                className="contact-text"
+              >
+                Twitter
+              </a>
+            </li>
+            <li className="p-1">
+              <a
+                href="mailto:william.sl.tobing@gmail.com"
+                className="contact-text"
+              >
+                GitHub
+              </a>
+            </li>
           </ul>
         </Fade>
       </div>
