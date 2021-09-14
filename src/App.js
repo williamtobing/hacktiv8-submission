@@ -1,6 +1,4 @@
-import { useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import sal from "sal.js";
 
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
@@ -11,10 +9,6 @@ import Team from "./components/Team/Team";
 import Contact from "./components/Contact/Contact";
 
 function App() {
-  useEffect(() => {
-    sal();
-  }, []);
-
   return (
     <Router>
       <Navbar />
