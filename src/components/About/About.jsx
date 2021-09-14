@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Fade from "react-reveal/Fade";
-import { ClipboardListIcon, EmojiHappyIcon } from "@heroicons/react/outline";
+import { IdentificationIcon, EmojiHappyIcon } from "@heroicons/react/outline";
 
 function About() {
   const [count, setCount] = useState(1);
@@ -19,7 +19,7 @@ function About() {
       <div className="my-container flex flex-col">
         <Fade bottom cascade>
           <div className="">
-            <ClipboardListIcon className="h-16 w-16 mb-4 dark:text-white mx-auto" />
+            <IdentificationIcon className="h-16 w-16 mb-4 dark:text-white mx-auto" />
             <h1 className="centered text-center text-4xl font-bold dark:text-white mb-4">
               About
             </h1>

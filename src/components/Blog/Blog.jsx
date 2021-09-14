@@ -1,5 +1,5 @@
 import Fade from "react-reveal/Fade";
-import { ClipboardListIcon } from "@heroicons/react/outline";
+import { NewspaperIcon } from "@heroicons/react/outline";
 
 function Blog() {
   return (
@@ -7,14 +7,14 @@ function Blog() {
       <div className="my-container flex flex-col">
         <Fade bottom cascade>
           <div className="mt-20 flex justify-center mb-4 md:hidden">
-            <ClipboardListIcon className="h-12 w-12 mb-2 dark:text-white" />
+            <NewspaperIcon className="h-12 w-12 mb-2 dark:text-white" />
             <h1 className="flex items-center text-4xl font-bold dark:text-white">
               Blog
             </h1>
           </div>
 
           <div className="mt-20 hidden md:block mb-4">
-            <ClipboardListIcon className="h-16 w-16 mb-2 dark:text-white mx-auto" />
+            <NewspaperIcon className="h-16 w-16 mb-2 dark:text-white mx-auto" />
             <h1 className="text-center text-4xl font-bold dark:text-white">
               Blog
             </h1>
@@ -59,12 +59,11 @@ function Blog() {
                   <span className="font-bold">Vue.js</span>
                   <br />
                   <span className="text-gray-600 dark:text-gray-400">
-                    Vue (pronounced /vjuː/, like view) is a progressive
-                    framework for building user interfaces. Unlike other
-                    monolithic frameworks, Vue is designed from the ground up to
-                    be incrementally adoptable. The core library is focused on
-                    the view layer only, and is easy to pick up and integrate
-                    with other libraries or existing projects...{" "}
+                    Vue is a progressive framework for building user interfaces.
+                    Unlike other monolithic frameworks, Vue is designed from the
+                    ground up to be incrementally adoptable. The core library is
+                    focused on the view layer only, and is easy to pick up and
+                    integrate with other libraries or existing projects...{" "}
                     <span className="hover:underline">
                       <a
                         href="https://v3.vuejs.org/"
