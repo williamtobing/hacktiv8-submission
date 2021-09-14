@@ -1,6 +1,6 @@
 import Fade from "react-reveal/Fade";
 import {
-  ShoppingCartIcon,
+  TemplateIcon,
   ShoppingBagIcon,
   CalculatorIcon,
 } from "@heroicons/react/outline";
@@ -18,7 +18,7 @@ function Project() {
       id: 2,
       title: "remember-that.netlify.app",
       link: "https://remember-that.netlify.app/",
-      icon: <ShoppingCartIcon className="h-8 w-8 mb-2 mx-auto" />,
+      icon: <TemplateIcon className="h-8 w-8 mb-2 mx-auto" />,
     },
     {
       id: 3,
