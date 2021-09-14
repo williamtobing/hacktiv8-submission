@@ -4,7 +4,7 @@ import "./Home.css";
 
 function Home() {
   return (
-    <section className="h-screen centered flex-col">
+    <section className="my-container h-screen centered flex-col">
       <Fade left>
         <ClipboardListIcon className="h-16 w-16 mb-4 dark:text-white" />
         <h1 className="centered text-center text-2xl md:text-4xl font-bold dark:text-white">
