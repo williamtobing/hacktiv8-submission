@@ -15,11 +15,15 @@ function About() {
         </Fade>
         <Fade bottom cascade>
           <table>
-            <tr>
-              <td className="flex font-bold animate-spin dark:text-white">x</td>
-              <td>&nbsp;</td>
-              <td className="dark:text-white">Web Developer from Tarutung</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td className="flex font-bold animate-spin dark:text-white">
+                  x
+                </td>
+                <td>&nbsp;</td>
+                <td className="dark:text-white">Web Developer from Tarutung</td>
+              </tr>
+            </tbody>
           </table>
         </Fade>
       </div>
